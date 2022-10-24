@@ -1,54 +1,64 @@
+/* Main css file for basic structure */
+/* The Website's functionality is based on 3 vertical pages
+  1. sidebar
+  2. feed
+  3. widgets
+
+   CSS layout is mostly based on the flexbox as a Major!
+  */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
 }
 
 body {
   overflow-x: hidden;
   font-family: Prompt;
-  --twitter-color: #50b7f5;
-  --twitter-background: #e6ecf0;
-  /* display: flex; */
+  --persian-white: #E8E0D6;
+  --persian-orange: #D99058;
+  --persian-blue-medium: #0067A5;
+  --Persian-blue-proper: #1c39BB;
+  --persian-white-rgb: 232, 224, 214;
+  --persian-orange-rgb: 217, 144, 88;
+  --persian-blue-medium-rgb: 0, 103, 165;
+  --Persian-blue-proper-rgb: 28, 57, 187;
   /* Makes nav-bar width to be enough we need */
-  /* height: 100vh; */ /* Because of Sticky navbar*/
+  height: 100vh;
+  /* Because of Sticky navbar*/
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
   max-width: 90%;
   margin-left: auto;
   margin-right: auto;
   padding: 0 1px;
-  align-items: center;
-
-background-color: #E8E0D661;
-
+  /* Persian white color */
+  background-color: rgba(var(--persian-white-rgb), 0.38);
 }
-
 
 /* ---------------- Basic structure ---------- */
 
-body{
+.container{
   display: flex;
-  justify-content: space-between;
   align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  height: auto;
 }
 
-.sidebar,.widgets{
+.sidebar, .widgets {
   position: sticky;
-   top: 0;
-  width: 20%;
+  top: 0;
 }
 
-.feed{
-  background-color: #d9905824;
-  flex: auto;
-
+.feed {
+  background-color: rgba(var(--persian-orange-rgb), 0.14);
   width: 100%;
   z-index: 100;
 }
 
 /* ----------- sidebar ---------------------- */
-
-
 .sidebarOption {
   display: flex;
   /* puts icon and h2 by eachother */
@@ -67,73 +77,64 @@ body{
 }
 
 .sidebarOption:hover {
-  background-color:#E8E0D699;
+  /* 0.6 */
+  background-color: rgba(var(--persian-white-rgb), 0.6);
   border-radius: 30px;
-  color:#0067A5;
+  color: var(--persian-blue-medium);
   transition: color 100ms ease-out;
 }
 
 .sidebarOption.active {
-  color: #0067A5;
+  color: var(--persian-blue-medium);
 }
 
 .sidebar-tweet {
   width: 100%;
-  /*Medium Persian Blue*/
-  background-color: #0067A5;
-  /*Persian White*/
-  color: #E8E0D6;
+  background-color: var(--persian-blue-medium);
+  color: var(--persian-white);
   border: none;
-
   font-weight: 900;
   border-radius: 30px;
   height: 50px;
   margin-top: 20px;
 }
-.sidebar-tweet:hover{
-  /*Persina Blue Proper*/
-  background-color: #1c39BB;
+
+.sidebar-tweet:hover {
+  background-color: var(--Persian-blue-proper);
 }
 
 .sidebar {
-  /* border-right: 1px solid #0067A5; */
   flex: 0.2;
-
   margin-top: 20px;
   padding-left: 20px;
   padding-right: 20px;
 }
 
 .fa-twitter {
-  color: #0067A5;
+  color: var(--persian-blue-medium);
   font-size: 30px;
   transition: 0.5s;
 }
 
 .fa-twitter:hover {
-  color: #1c39BB;
+  color: var(--Persian-blue-proper);
 }
-
 
 /* --------------Feed  ---------------------*/
 .feed {
   border-right: 1px solid black;
   border-left: 1px solid black;
   min-width: fit-content;
-
   overflow-y: scroll;
 }
 
 .feed-header {
   position: sticky;
   top: 0;
-
   z-index: 100;
   border-bottom: 1px solid black;
   padding: 15px 20px;
 }
-
-
 
 .feed_header h2 {
   font-size: 20px;
@@ -151,122 +152,14 @@ body{
 }
 
 /* finish hid scroll bar */
-/* ----------tweet box start ---------------- */
-.tweetBox-input img {
-  border-radius: 50%;
-  height: 40px;
-}
 
-.tweetBox {
-  padding-bottom: 10px;
-  /* border-bottom: 2px solid black; */
-  padding-right: 10px;
-}
-
-.tweetBox form {
-  display: flex;
-  flex-direction: column;
-}
-
-.tweetBox-input {
-  display: flex;
-  padding: 20px;
-}
-
-.tweetBox-input input {
-  flex: 1;
-  margin-left: 20px;
-  font-size: 20px;
-  border: none;
-  outline: none;
-}
-
-.tweetBox-tweetButton {
-  /* - Colouring - */
-  /*Medium Persian Blue*/
-  background-color: #0067A5;
-  /*Persian White*/
-  color: #E8E0D6;
-  border: none;
-  font-weight: 900;
-  border-radius: 30px;
-  width: 80px;
-  height: 40px;
-  margin-right: 20px;
-  margin-left: auto;
-  /* How it moves it to rightside??*/
-}
-.tweetBox-tweetButton:hover{
-  background-color: #1c39BB;
-}
-
-/* -------------- post styling ---------------------- */
-.post-avatar img {
-  border-radius: 50%;
-  height: 40px;
-}
-
-.post {
-  display: flex;
-  align-items: flex-start;
-  /* border-bottom: 1px solid black; */
-}
-
-.post-body img {
-  width: 450px;
-  object-fit: contain;
-  /* contain: increases or decreases the size of the image to fill the box whilst preserving its aspect-ratio.*/
-  border-radius: 20px;
-}
-
-.post-footer {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 10px;
-}
-
-.post-badge {
-  font-size: 14px !important;
-  color: var(--twitter-color);
-  margin-right: 5px;
-}
-
-.post-header-special {
-  font-weight: 600;
-  font-size: 12px;
-  color: grey;
-}
-
-.post-header-text h3 {
-  font-size: 15px;
-  margin-bottom: 5px;
-}
-
-.post-header-description {
-  margin-bottom: 10px;
-  font-size: 15px;
-}
-
-.post-body {
-  flex: 1;
-  padding: 10px;
-}
-
-.post-avatar {
-  padding: 20px;
-}
 
 /* ------------- widgets ------------- */
 .widgets-input {
-  /* - Colouring - */
-  /*Medium Persian Blue*/
-  background-color: #0067A5;
-  /*Persian White*/
-  color: #E8E0D6;
-
+  background-color: var(--persian-blue-medium);
+  color: var(--persian-white);
   display: flex;
   align-items: center;
-
   padding: 10px;
   border-radius: 20px;
   margin-top: 20px;
@@ -275,32 +168,28 @@ body{
 
 .widgets-input input {
   border: none;
-  /*Medium Persian Blue*/
-  background-color: #0067A5;
-  /*Persian White*/
-  color: #E8E0D6;
+  background-color: var(--persian-blue-medium);
+  color: var(--persian-white);
   outline: none;
 }
 
-.widgets-input.active{
-  /*Persina Blue Proper*/
-  background-color: #1c39BB;
+.widgets-input.active {
+  background-color: var(--Persian-blue-proper);
 }
 
 input::placeholder {
-  /*Persian White*/
-  color: #E8E0D6;
+  color: var(--persian-white);
 }
 
 .widgets-serach-icon {
-  color: #E8E0D6;
+  color: var(--persian-white);
 }
 
 .widgets-widget-container {
   margin-top: 15px;
   margin-left: 20px;
   padding: 20px;
-  background-color: #f5f8fa;
+  background-color: rgba(var(--persian-white-rgb), 0.5);
   border-radius: 20px;
 }
 

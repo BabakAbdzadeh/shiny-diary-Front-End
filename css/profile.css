@@ -10,14 +10,20 @@ border-bottom: 1px solid black;
 } */
 
 .header{
-
+  /* Grid positioning */
   grid-column-start: 1;
   grid-column-end: 3;
   grid-row-start: 1;
   grid-row-end:2;
+  /* children positioning */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
 }
 .header img{
-  max-width: 100%;
+  width: 100%;
+  height: auto;
 
 }
 

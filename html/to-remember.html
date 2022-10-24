@@ -4,13 +4,13 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Compose</title>
+  <title>To Remember</title>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous"
     referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="../css/styles.css">
   <link rel="stylesheet" href="../css/slide-navbar.css">
-  <link rel="stylesheet" href="../css/compose.css">
+  <link rel="stylesheet" href="../css/to-remember.css">
 
 </head>
 
@@ -63,45 +63,57 @@
       <button class="sidebar-tweet" type="button" name="button">tweet</button>
     </div>
     <!-- Sidebar ends -->
-    <div class="compose-container">
+    <div class="to-remember-container">
       <div class="feed-header">
-        <h2>Write a new chapter</h2>
+        <h2>Have a note of your future story now!</h2>
       </div>
-      <div class="title edit">
+      <div class="title">
 
-        <div class="input-container">
-          <input class="defined-input" placeholder="Title">
-        </div>
-      </div>
-      <div class="brief edit">
-        <div class="input-container">
 
-          <textarea name="paragraph_text" class="defined-input"  rows="5" placeholder="Write a short paragraph"></textarea>
-        </div>
-      </div>
-      <div class="story edit">
-        <div class="input-container">
-          <textarea name="paragraph_text" class="defined-input"  rows="15" placeholder="Write your story"></textarea>
-        </div>
-      </div>
-      <div class="image-box edit">
-        <div class="image-container">
+        <input class="defined-input" placeholder="Title">
 
+      </div>
+      <div class="remember-box">
+        <div class="item first-item">
+          <input type="checkbox" id="1" name="scales">
+          <label for="1">This is like a title for checkbox</label>
+          <p>This one is the explanation,This one is the explanation,This one is the explanation,This one is the explanation,This one is the explanation,This one is the explanation,This one is the explanation,This one is the explanation</p>
         </div>
-        <div class="upload-button">
-          <!--default html file upload button-->
-          <input type="file" id="actual-btn" class="upload-input">
-          <!--our custom file upload button-->
-          <label for="actual-btn" class="actual-btn-avatar">
-            <span class="material-icons upload">
-              upload
-            </span>
-          </label>
+        <div class="item">
+          <input type="checkbox" id="2" name="scales">
+          <label for="2">This is like a title for checkbox</label>
+          <p>This one is the explanation</p>
+        </div>
+        <div class="item">
+          <input type="checkbox" id="3" name="scales">
+          <label for="3">This is like a title for checkbox</label>
+          <p>This one is the explanation</p>
+        </div>
+        <div class="item">
+          <input type="checkbox" id="4" name="scales">
+          <label for="4">This is like a title for checkbox</label>
+          <p>This one is the explanation</p>
+        </div>
+
+      </div>
+      <div class="add-box">
+
+        <div class="form-container">
+          <form class="form" action="index.html" method="post">
+            <div class="form-input">
+              <input class="defined-input" placeholder="What do you want to remmeber?" id="subtitle">
+              <input class="defined-input" placeholder="Description" id="description">
+            </div>
+            <div class="form-submit">
+              <button class="defined-button" type="button" name="button">+</button>
+            </div>
+          </form>
+
         </div>
       </div>
       <div class="button-container">
         <button class="defined-button" type="button">
-          Post </button>
+          Save </button>
         <button class="defined-button" type="button">
           Cancel </button>
       </div>
@@ -110,7 +122,7 @@
     <div class="widgets">
       <div class="widgets-input">
         <span class="material-icons widgets-serach-icon"> search </span>
-        <input class="search-input"type="text" name="" value="" placeholder="Search Twitter">
+        <input class="search-input" type="text" name="" value="" placeholder="Search Twitter">
       </div>
       <div class="widgets-widget-container">
         <h2>What's happening</h2>
@@ -125,7 +137,7 @@
     </div>
     <!-- widgets ends -->
 
-    </div>
+  </div>
 
 </body>
 
