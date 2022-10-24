@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Compose</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous"
+    referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/slide-navbar.css">
+  <link rel="stylesheet" href="../css/compose.css">
+
+</head>
+
+<body>
+
+
+  <div class="container">
+    <!-- Sidebar start -->
+    <div class="sidebar">
+      <i class="fab fa-twitter"></i>
+      <!-- hamburger -->
+      <div class="nav-bar">
+        <div class="sidebarOption active">
+          <span class="material-icons">
+            home
+          </span>
+          <h2>Home</h2>
+        </div>
+        <div class="sidebarOption">
+          <span class="material-icons">
+            search
+          </span>
+          <h2>Eplore</h2>
+        </div>
+        <div class="sidebarOption">
+          <span class="material-icons">
+            notifications
+          </span>
+          <h2>Home</h2>
+        </div>
+        <div class="sidebarOption">
+          <span class="material-icons">
+            mail_outline
+          </span>
+          <h2>Messages</h2>
+        </div>
+        <div class="sidebarOption">
+          <span class="material-icons">
+            bookmark_border
+          </span>
+          <h2>Bookmark</h2>
+        </div>
+        <div class="sidebarOption">
+          <span class="material-icons">
+            list_alt
+          </span>
+          <h2>List</h2>
+        </div>
+      </div>
+      <button class="sidebar-tweet" type="button" name="button">tweet</button>
+    </div>
+    <!-- Sidebar ends -->
+    <div class="compose-container">
+      <div class="title edit">
+
+        <div class="input-container">
+          <input class="defined-input" placeholder="Title">
+        </div>
+      </div>
+      <div class="brief edit">
+        <div class="input-container">
+
+          <textarea name="paragraph_text" class="defined-input"  rows="5" placeholder="Write a short paragraph"></textarea>
+        </div>
+      </div>
+      <div class="story edit">
+        <div class="input-container">
+          <textarea name="paragraph_text" class="defined-input"  rows="15" placeholder="Write your story"></textarea>
+        </div>
+      </div>
+      <div class="image-box edit">
+        <div class="image-container">
+
+        </div>
+        <div class="upload-button">
+          <!--default html file upload button-->
+          <input type="file" id="actual-btn" class="upload-input">
+          <!--our custom file upload button-->
+          <label for="actual-btn" class="actual-btn-avatar">
+            <span class="material-icons upload">
+              upload
+            </span>
+          </label>
+        </div>
+      </div>
+      <div class="button-container">
+        <button class="defined-button" type="button">
+          Post </button>
+        <button class="defined-button" type="button">
+          Cancel </button>
+      </div>
+    </div>
+    <!-- widgets starts -->
+    <div class="widgets">
+      <div class="widgets-input">
+        <span class="material-icons widgets-serach-icon"> search </span>
+        <input class="search-input"type="text" name="" value="" placeholder="Search Twitter">
+      </div>
+      <div class="widgets-widget-container">
+        <h2>What's happening</h2>
+        <!-- <blockquote class="twitter-tweet">
+          <p lang="en" dir="ltr">Sunsets don&#39;t get much better than this one over <a href="https://twitter.com/GrandTetonNPS?ref_src=twsrc%5Etfw">@GrandTetonNPS</a>. <a
+              href="https://twitter.com/hashtag/nature?src=hash&amp;ref_src=twsrc%5Etfw">#nature</a> <a href="https://twitter.com/hashtag/sunset?src=hash&amp;ref_src=twsrc%5Etfw">#sunset</a> <a
+              href="http://t.co/YuKy2rcjyU">pic.twitter.com/YuKy2rcjyU</a></p>&mdash; US Department of the Interior (@Interior) <a href="https://twitter.com/Interior/status/463440424141459456?ref_src=twsrc%5Etfw">May 5, 2014</a>
+        </blockquote> -->
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+      </div>
+    </div>
+    <!-- widgets ends -->
+
+    </div>
+
+</body>
+
+</html>

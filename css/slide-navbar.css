@@ -1,0 +1,57 @@
+.sidebar {
+  transform: translateX(0px);
+  transition: 0.5s;
+}
+
+.sidebar.active {
+  transform: translateX(-500px);
+  flex: 0.01;
+  min-width: auto;
+}
+
+.fa-twitter {
+  transform: translateX(0px);
+  transition: 0.5s;
+}
+
+.fa-twitter.active {
+
+  transform: translateX(500px);
+  font-size: 60px;
+}
+
+.sidebar-tweet {
+  transform: translateY(0px);
+  transition: 0.5s;
+}
+
+.sidebar-tweet.active {
+  transform: translate(500px, -400px);
+}
+
+.feed {
+  transition: 1s;
+}
+
+.feed.active {
+  width: 100%;
+  flex: 5;
+}
+
+.widgets {
+
+  transition: 1s;
+  transform: translateX(0px);
+}
+
+.widgets.active {
+  width: 1%;
+  transform: translateX(500px);
+
+  flex: 0.01;
+}
+
+.widgets-input {
+  transition: 1s;
+  transform: translateX(0px);
+}

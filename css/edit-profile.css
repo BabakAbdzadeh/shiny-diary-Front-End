@@ -1,0 +1,151 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  /*Persian White- opacoty: 61*/
+  background-color: #E8E0D661;
+
+}
+
+.profile-container{
+  border: 1px solid black;
+  background-color: #d9905824;
+
+}
+
+.edit {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: 10%;
+  margin-bottom: 10px;
+}
+
+.button-container {
+  margin-left: 10%;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 7;
+  grid-row-end: 8;
+}
+
+.defined-button {
+  /* - Colouring - */
+  /*Medium Persian Blue*/
+  background-color: #0067A5;
+  /*Persian White*/
+  color: #E8E0D6;
+  /* - UI - */
+  /*  font  */
+  font-size: 12px;
+  font-weight: 800;
+  /*font-family: ---- ; */
+  /*sizing*/
+  border: none;
+  padding: 0 22px;
+  height: 42px;
+  width: calc(2*22px + 6ch);
+  border-radius: 10px;
+  margin-right: 5%;
+}
+
+.defined-button:hover {
+  /*Persina Blue Proper*/
+  background-color: #1c39BB;
+}
+
+.input-container {
+  margin: 0;
+  padding: 0;
+}
+
+.defined-input {
+  /* - Colouring - */
+  /*Medium Persian Blue*/
+  background-color: #0067A5;
+  /*Persian White*/
+  color: #E8E0D6;
+  /* - UI - */
+  /*font*/
+  font-size: 14px;
+  font-weight: 500;
+  /*font-family: ---- ; */
+  /*sizing*/
+  border: none;
+  border-radius: 10px;
+  height: 42px;
+  width: 30ch;
+  padding-left: 1ch;
+}
+
+.defined-input:focus {
+  outline: none;
+  /*Persina Blue Proper*/
+  background-color: #1c39BB;
+}
+
+input::placeholder {
+  /*Persian White*/
+  color: #E8E0D6;
+}
+
+.user-id.edit {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  justify-content:flex-start;
+
+  font-size: 25px;
+  font-weight: 500;
+}
+
+/*-------------- Upload button ------------------- */
+.material-icons.upload{
+  font-size: 35px;
+  padding: 5px;
+  background-color: #0067A5;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.material-icons.upload:hover{
+background-color: #1c39BB;
+}
+.upload-input{
+  display: none;
+}
+/* --------------- Upload btn positioning-------------- */
+.header{
+  display: block;
+  position: relative;
+}
+
+.avatar{
+  display: block;
+  position: relative;
+
+  z-index: 100;
+  margin-bottom: 35px;
+}
+
+.actual-btn-avatar{
+  position: relative;
+  bottom: 10%;
+  right: 10%;
+  border-radius: 10px;
+  color: #E8E0D6;
+
+
+
+}
+.actual-btn-header{
+  position: absolute;
+  bottom: -10px;
+  right: 10px;
+  border-radius: 10px;
+  color: #E8E0D6;
+  background-color: #0067A5;
+  cursor: pointer;
+
+}
