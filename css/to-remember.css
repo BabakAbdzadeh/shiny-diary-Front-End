@@ -63,8 +63,10 @@ height: 100%;
 
     width: 60%;
     min-height: 300px;
+    max-height: 400px;
     border-radius: 10px;
     background-color: #d9905840;
+    overflow: auto;
 
 }
 .item.first-item{
@@ -110,16 +112,17 @@ height: 100%;
 }
 
 .item input:checked + label:after {
-  content: '';
+
+  content: '⨉';
+  color: var(--Persian-blue-proper);
+  font-size: 35px;
   display: block;
   position: absolute;
-  top: 2px;
-  left: 9px;
-  width: 6px;
-  height: 14px;
-  border: solid #0067A5;
-  border-width: 0 2px 2px 0;
-  transform: rotate(45deg);
+  top: -10px;
+  left: -2px;
+
+
+
 }
 /*--------- Checkbox Finished ---------- */
 /* Description */

@@ -75,39 +75,39 @@
       </div>
       <div class="remember-box">
         <div class="item first-item">
-          <input type="checkbox" id="1" name="scales">
-          <label for="1">This is like a title for checkbox</label>
-          <p>This one is the explanation,This one is the explanation,This one is the explanation,This one is the explanation,This one is the explanation,This one is the explanation,This one is the explanation,This one is the explanation</p>
+          <input type="checkbox" id="1" name="scales" onclick="checklistRemove(this)">
+          <label for="1">Your list Label is going to be here!</label>
+          <p>And explanation will be writen here.</p>
         </div>
-        <div class="item">
-          <input type="checkbox" id="2" name="scales">
-          <label for="2">This is like a title for checkbox</label>
+        <!-- <div class="item">
+          <input type="checkbox" id="2" name="scales" onclick="checklistRemove(this)">
+          <label for="2">This is like a title for checkbox 2</label>
           <p>This one is the explanation</p>
         </div>
         <div class="item">
-          <input type="checkbox" id="3" name="scales">
-          <label for="3">This is like a title for checkbox</label>
+          <input type="checkbox" id="3" name="scales" onclick="checklistRemove(this)">
+          <label for="3">This is like a title for checkbox 3</label>
           <p>This one is the explanation</p>
         </div>
         <div class="item">
-          <input type="checkbox" id="4" name="scales">
-          <label for="4">This is like a title for checkbox</label>
+          <input type="checkbox" id="4" name="scales" onclick="checklistRemove(this)">
+          <label for="4">This is like a title for checkbox 4</label>
           <p>This one is the explanation</p>
-        </div>
+        </div> -->
 
       </div>
       <div class="add-box">
 
         <div class="form-container">
-          <form class="form" action="index.html" method="post">
+          <!-- <form class="form" method="post" id="to-add" onsubmit="return doForm()"> -->
             <div class="form-input">
-              <input class="defined-input" placeholder="What do you want to remmeber?" id="subtitle">
-              <input class="defined-input" placeholder="Description" id="description">
+              <input type="text" name="title" class="defined-input" placeholder="What do you want to remmeber?" id="title">
+              <input  type="text" name="content" class="defined-input" placeholder="Description" id="content">
             </div>
             <div class="form-submit">
-              <button class="defined-button" type="button" name="button">+</button>
+              <button class="defined-button" type="submit" onclick="checklistAdd()">+</button>
             </div>
-          </form>
+          <!-- </form> -->
 
         </div>
       </div>
@@ -138,7 +138,7 @@
     <!-- widgets ends -->
 
   </div>
-
+<script src="../scripts/to-remember.js" charset="utf-8"></script>
 </body>
 
 </html>
