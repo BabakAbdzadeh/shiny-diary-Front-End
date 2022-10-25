@@ -1,0 +1,93 @@
+.post-container{
+  display: flex;
+  flex-direction: column;
+
+  /* Issue may arise - Test needs */
+  padding: 1% 2% 1% 2%; /* RESPONSIVE CHECK*/
+  border-bottom: 1px solid var(--Persian-blue-proper);
+}
+
+
+.user-container{
+  display: flex;
+  align-items:center;
+  justify-content: flex-start;
+}
+
+.post-avatar img {
+  border-radius: 50%;
+  height: 40px;
+}
+.user-info h3 {
+  font-size: 15px;
+
+}
+.post-badge {
+  font-size: 14px !important;
+  color: var(--persian-blue-medium);
+  margin-right: 5px;
+}
+.post-header-special {
+  font-weight: 600;
+  font-size: 12px;
+  color: grey;
+}
+
+.post-content{
+  display: flex;
+  min-width: auto;
+  min-height: auto;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: nowrap;
+  padding-bottom: 5%; /* RESPONSIVE CHECK*/
+
+}
+
+.post-header{
+  display: flex;
+  align-items: center;
+  justify-content:flex-start;
+  width: 100%;
+}
+
+.post-title{
+
+  width: 100%;
+
+}
+.post-title  h3{
+  text-align: center;
+font-weight: 800;
+font-size: 18px;
+
+width:0;min-width:100%;
+
+}
+
+.post-story{
+  padding: 2% 0 2% 0;
+}
+
+.post-story  p{
+  font-weight: 400;
+  width:0;min-width:100%;
+}
+
+
+
+.post-footer{
+  display: flex;
+  justify-content: space-around;
+}
+
+
+
+/* Whole Story */
+.post-story .brief.invisible{
+  display: none;
+}
+
+.post-story .entire.invisible{
+  display: none;
+}

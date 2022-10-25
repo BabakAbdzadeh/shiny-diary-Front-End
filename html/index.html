@@ -10,8 +10,9 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous"
     referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="../css/styles.css">
-  <link rel="stylesheet" href="../css/feed.css">
   <link rel="stylesheet" href="../css/slide-navbar.css">
+  <link rel="stylesheet" href="../css/feed.css">
+  <link rel="stylesheet" href="../css/post.css">
 </head>
 
 <body>
@@ -68,71 +69,58 @@
       <div class="feed-header">
         <h2>Chapters</h2>
       </div>
-
-      <div class="post">
-        <div class="post-content">
-
-          <div class="post-avatar">
-            <img src="https://gravatar.com/avatar/a1db6a4341b144e96af65df28d27396e?s=200&d=robohash&r=x" alt="">
-          </div>
-          <div class="post-body">
-            <div class="post-header">
-              <div class="user-info">
-                <h3>Babak
-                  <span class="post-header-special">
-                    <span class="material-icons post-badge">verified</span> @babak
-                  </span>
-                </h3>
-              </div>
-              <div class="post-header-description">
-                <p>bla bla is one test</p>
-              </div>
-              <div class="image-box">
-                <img src="https://picsum.photos/600/400" alt="There should be a photo here!">
-
-              </div>
+      <div class="posts">
+        <div class="post-container">
+          <!-- Post-User-Info -->
+          <div class="user-container">
+            <h3>Story Teller:</h3>
+            <div class="post-avatar">
+              <img src="https://gravatar.com/avatar/a1db6a4341b144e96af65df28d27396e?s=200&d=robohash&r=x" alt="">
             </div>
-          </div>
-        </div>
-        <div class="post-footer">
-          <span class="material-icons">repeat</span>
-          <span class="material-icons">favorite_border</span>
-          <span class="material-icons">publish</span>
-        </div>
-      </div>
-
-
-
-
-
-      <div class="post post-2">
-        <div class="post-avatar">
-          <img src="https://gravatar.com/avatar/a1db6a4341b144e96af65df28d27396e?s=200&d=robohash&r=x" alt="">
-        </div>
-        <div class="post-body">
-          <div class="post-header">
-            <div class="post-header-text">
+            <div class="user-info">
               <h3>Babak
                 <span class="post-header-special">
                   <span class="material-icons post-badge">verified</span> @babak
                 </span>
               </h3>
             </div>
-            <div class="post-header-description">
-              <p>bla bla is one test for test</p>
+          </div>
+          <!-- Post-Actual-Content -->
+          <div class="post-content" >
+            <!-- Brief-version -->
+            <div class="post-header">
+              <div class="post-title">
+                <h3>Just some title</h3>
+              </div>
+              <div class="post-header-img">
+                  <img src="https://picsum.photos/400/200" alt="There should be a photo here!">
+              </div>
+            </div>
+            <div class="post-story">
+              <p class="brief">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eget aliquam dui, lacinia vehicula lacus. Fusce eu placerat dolor. Maecenas sollicitudin lacus eget nisi mollis, sed vehicula mauris pulvinar. Duis maximus,
+                nisl finibus sollicitudin consequat, tortor nulla tempor sem, id maximus purus lectus nec est. Nam sodales mollis dui. Quisque molestie nisl vel luctus fringilla. Sed a metus aliquet elit mollis dapibus at ac lectus. Phasellus pretium dolor
+                at elit imperdiet aliquam. Nam a luctus dui.
+              </p>
+              <p class="entire invisible">
+          
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eget aliquam dui, lacinia vehicula lacus. Fusce eu placerat dolor. Maecenas sollicitudin lacus eget nisi mollis, sed vehicula mauris pulvinar. Duis maximus, nisl finibus sollicitudin consequat, tortor nulla tempor sem, id maximus purus lectus nec est. Nam sodales mollis dui. Quisque molestie nisl vel luctus fringilla. Sed a metus aliquet elit mollis dapibus at ac lectus. Phasellus pretium dolor at elit imperdiet aliquam. Nam a luctus dui.
+                <br>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eget aliquam dui, lacinia vehicula lacus. Fusce eu placerat dolor. Maecenas sollicitudin lacus eget nisi mollis, sed vehicula mauris pulvinar. Duis maximus, nisl finibus sollicitudin consequat, tortor nulla tempor sem, id maximus purus lectus nec est. Nam sodales mollis dui. Quisque molestie nisl vel luctus fringilla. Sed a metus aliquet elit mollis dapibus at ac lectus. Phasellus pretium dolor at elit imperdiet aliquam. Nam a luctus dui.
+                <br>
+                Pellentesque a nibh sed risus ultrices eleifend vitae gravida justo. Curabitur tellus justo, tempor tristique cursus id, mollis non lectus. In hac habitasse platea dictumst. Sed lobortis imperdiet finibus. Phasellus id leo et lacus imperdiet luctus. Maecenas volutpat mi vitae volutpat vulputate. Nunc lacinia sem tortor, non tristique nibh lobortis vitae. Praesent malesuada tristique tincidunt. Curabitur auctor porttitor nulla nec finibus. Proin vestibulum eleifend sagittis. Morbi ut nibh id magna faucibus finibus sed eget lectus. Phasellus in odio urna. Nulla hendrerit nibh tortor, ut vulputate ligula volutpat in. Nunc vitae sollicitudin nibh. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras et magna in nisl pretium scelerisque ut at leo.
+              </p>
+              <a href="#" onclick="showStory(this);event.preventDefault();">Entire Chapter</a>
+
             </div>
           </div>
-          <img src="https://picsum.photos/800/600" alt="There should be a photo here!">
-        </div>
-        <div class="post-footer">
-
-          <span class="material-icons">repeat</span>
-          <span class="material-icons">favorite_border</span>
-          <span class="material-icons">publish</span>
+          <!-- Post-Footer -->
+          <div class="post-footer">
+            <span class="material-icons">repeat</span>
+            <span class="material-icons">favorite_border</span>
+            <span class="material-icons">publish</span>
+          </div>
         </div>
       </div>
-
-
     </div>
 
 
@@ -155,8 +143,8 @@
     </div>
     <!-- widgets ends -->
   </div>
-
-  <script src="../scripts/side-bars.js" charset="utf-8"></script>
+  <script src="../scripts/post.js" charset="utf-8"></script>
+  <!-- <script src="../scripts/side-bars.js" charset="utf-8"></script> -->
 </body>
 
 </html>
