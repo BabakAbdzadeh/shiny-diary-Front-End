@@ -1,0 +1,38 @@
+.container{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 100vh;
+  background-color: #d9905830;
+}
+
+
+.transfer-box-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2%;
+  height: 100%;
+  background-color: rgba(var(--persian-orange-rgb), 0.38);
+  overflow-y: scroll;
+}
+
+
+
+.remember-box.modified{
+  min-height: auto;
+  min-width: auto;
+  background-color: initial;
+}
+
+
+
+.item-to-paragraph{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
