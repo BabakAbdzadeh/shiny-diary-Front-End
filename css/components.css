@@ -1,0 +1,67 @@
+/* ------------ Buttons-------------- */
+.defined-button {
+  /* - Colouring - */
+  background-color: var(--persian-blue-medium);
+  color: var(--persian-white);
+
+  /*  font  */
+  /*font-family: ---- ; */
+  font-size: 12px;
+  font-weight: 800;
+
+  /*sizing*/
+  border: none;
+  height: 42px;
+  width: calc(2*22px + 6ch);
+  border-radius: 10px;
+  margin-right: 5%;
+}
+
+.defined-button:hover {
+  background-color: var(--Persian-blue-proper);
+}
+
+
+/* ----------- Input ------------- */
+.defined-input { /* Class Name for INPUT*/
+  /* - Colouring - */
+  background-color:var(--persian-blue-medium);
+  color: var(--persian-white);
+
+  /*font*/
+  /*font-family: ---- ; */
+  /*font-weight: -----;  */
+  /*font-size: -------;  */
+
+
+  /*sizing*/
+  /* height: -----; */
+  /* width: ----; */
+  border: none;
+  border-radius: 10px;
+  padding: 1ch;
+}
+
+.title input{
+  font-weight: 700;
+  font-size: 20px;
+}
+
+
+.defined-input:focus {
+  outline: none;
+    outline-color: var(--persian-white);
+  background-color: var(--Persian-blue-proper);
+}
+input::placeholder {
+  color: var(--persian-white);
+}
+
+textarea{
+  width: 100%;
+}
+
+textarea::placeholder{
+
+  color: var(--persian-white);
+}

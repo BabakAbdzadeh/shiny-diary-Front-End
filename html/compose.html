@@ -6,18 +6,23 @@
   <meta charset="utf-8">
   <title>Compose</title>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous"
     referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="../css/styles.css">
-  <link rel="stylesheet" href="../css/slide-navbar.css">
+
   <link rel="stylesheet" href="../css/compose.css">
+  <link rel="stylesheet" href="../css/components.css">
 
 </head>
 
 <body>
 
 
-  <div class="container">
+  <div class="layer-container">
     <!-- Sidebar start -->
     <div class="sidebar">
       <i class="fab fa-twitter"></i>
@@ -63,47 +68,51 @@
       <button class="sidebar-tweet" type="button" name="button">tweet</button>
     </div>
     <!-- Sidebar ends -->
-    <div class="compose-container">
+    <div class="feed">
       <div class="feed-header">
         <h2>Write a new chapter</h2>
       </div>
-      <div class="title edit">
+      <div class="compose">
 
-        <div class="input-container">
-          <input class="defined-input" placeholder="Title">
-        </div>
-      </div>
-      <div class="brief edit">
-        <div class="input-container">
 
-          <textarea name="paragraph_text" class="defined-input"  rows="5" placeholder="Write a short paragraph"></textarea>
-        </div>
-      </div>
-      <div class="story edit">
-        <div class="input-container">
-          <textarea name="paragraph_text" class="defined-input"  rows="15" placeholder="Write your story"></textarea>
-        </div>
-      </div>
-      <div class="image-box edit">
-        <div class="image-container">
+        <div class="title edit">
 
+          <div class="input-container">
+            <input class="defined-input" placeholder="Title">
+          </div>
         </div>
-        <div class="upload-button">
-          <!--default html file upload button-->
-          <input type="file" id="actual-btn" class="upload-input">
-          <!--our custom file upload button-->
-          <label for="actual-btn" class="actual-btn-avatar">
-            <span class="material-icons upload">
-              upload
-            </span>
-          </label>
+        <div class="brief edit">
+          <div class="input-container">
+
+            <textarea name="paragraph_text" class="defined-input"  rows="5" placeholder="Write a short paragraph"></textarea>
+          </div>
         </div>
-      </div>
-      <div class="button-container">
-        <button class="defined-button" type="button">
-          Post </button>
-        <button class="defined-button" type="button">
-          Cancel </button>
+        <div class="story edit">
+          <div class="input-container">
+            <textarea name="paragraph_text" class="defined-input"  rows="15" placeholder="Write your story"></textarea>
+          </div>
+        </div>
+        <div class="image-box edit">
+          <div class="image-container">
+
+          </div>
+          <div class="upload-button">
+            <!--default html file upload button-->
+            <input type="file" id="actual-btn" class="hide-input">
+            <!--our custom file upload button-->
+            <label for="actual-btn" class="actual-btn-avatar">
+              <span class="material-icons upload">
+                upload
+              </span>
+            </label>
+          </div>
+        </div>
+        <div class="button-container">
+          <button class="defined-button" type="button">
+            Post </button>
+            <button class="defined-button" type="button">
+              Cancel </button>
+            </div>
       </div>
     </div>
     <!-- widgets starts -->

@@ -7,211 +7,311 @@
   <meta charset="utf-8">
   <title>Profile</title>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous"
     referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="../css/styles.css">
   <link rel="stylesheet" href="../css/profile.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/post.css">
 </head>
 
 <body>
-  <!-- Sidebar start -->
-  <div class="sidebar">
-    <i class="fab fa-twitter"></i>
-    <!-- hamburger -->
-    <div class="nav-bar">
-      <div class="sidebarOption active">
-        <span class="material-icons">
-          home
-        </span>
-        <h2>Home</h2>
-      </div>
-      <div class="sidebarOption">
-        <span class="material-icons">
-          search
-        </span>
-        <h2>Eplore</h2>
-      </div>
-      <div class="sidebarOption">
-        <span class="material-icons">
-          notifications
-        </span>
-        <h2>Home</h2>
-      </div>
-      <div class="sidebarOption">
-        <span class="material-icons">
-          mail_outline
-        </span>
-        <h2>Messages</h2>
-      </div>
-      <div class="sidebarOption">
-        <span class="material-icons">
-          bookmark_border
-        </span>
-        <h2>Bookmark</h2>
-      </div>
-      <div class="sidebarOption">
-        <span class="material-icons">
-          list_alt
-        </span>
-        <h2>List</h2>
-      </div>
-    </div>
-    <button class="sidebar-tweet" type="button" name="button">tweet</button>
-  </div>
-  <!-- Sidebar ends -->
+  <div class="layer-container">
 
-  <!-- Feed starts -->
-  <div class="feed">
-    <div class="feed-header">
-      <h2>Profile</h2>
-    </div>
-    <!-- Profile info starts -->
-    <div class="profile-container">
-      <div class="header">
-        <img src="https://picsum.photos/900/300" alt="">
+    <!-- Sidebar start -->
+    <div class="sidebar">
+      <i class="fab fa-twitter"></i>
+      <!-- hamburger -->
+      <div class="nav-bar">
+        <div class="sidebarOption active">
+          <span class="material-icons">
+            home
+          </span>
+          <h2>Home</h2>
+        </div>
+        <div class="sidebarOption">
+          <span class="material-icons">
+            search
+          </span>
+          <h2>Eplore</h2>
+        </div>
+        <div class="sidebarOption">
+          <span class="material-icons">
+            notifications
+          </span>
+          <h2>Home</h2>
+        </div>
+        <div class="sidebarOption">
+          <span class="material-icons">
+            mail_outline
+          </span>
+          <h2>Messages</h2>
+        </div>
+        <div class="sidebarOption">
+          <span class="material-icons">
+            bookmark_border
+          </span>
+          <h2>Bookmark</h2>
+        </div>
+        <div class="sidebarOption">
+          <span class="material-icons">
+            list_alt
+          </span>
+          <h2>List</h2>
+        </div>
       </div>
+      <button class="sidebar-tweet" type="button" name="button">tweet</button>
+    </div>
+    <!-- Sidebar ends -->
 
-        <div class="avatar">
+    <!-- Feed starts -->
+    <div class="feed">
+      <div class="feed-header">
+        <h2>Profile</h2>
+      </div>
+      <!-- Profile info starts -->
+      <div class="user-profile-container">
+        <div class="header">
+          <img src="https://picsum.photos/900/300" alt="">
+        </div>
+
+        <div class="avatar margin">
           <img src="https://gravatar.com/avatar/a1db6a4341b144e96af65df28d27396e?s=200&d=robohash&r=x" alt="">
         </div>
         <div class="edit-btn">
           <button class="sidebar-tweet" type="button" name="button">Edit profile</button>
         </div>
-        <div class="user-name">
+        <div class="user-name margin">
           <p>UserName</p>
         </div>
-        <div class="user-id">
+        <div class="user-id margin">
           <p>@babak </p>
         </div>
-      <div class="bio">
-        <p>Here you can write your bio for people to see hahaha</p>
+        <div class="bio margin">
+          <p>Here you can write your bio for people to see hahaha</p>
+        </div>
+        <div class="location margin">
+          <p>Germany</p>
+        </div>
+        <div class="birth-info margin">
+          <p>birth info</p>
+        </div>
+        <div class="connectivities margin">
+          <p>Friends</p>
+        </div>
       </div>
-      <div class="location">
-        <p>Germany</p>
-      </div>
-      <div class="birth-info">
-        <p>birth info</p>
-      </div>
-      <div class="connectivities">
-        <p>Friends</p>
-      </div>
-    </div>
-    <!-- Profile info ends -->
+      <!-- Profile info ends -->
 
-    <!-- tweet box starts -->
-    <div class="tweetBox">
-      <form>
-        <div class="tweetBox-input">
-          <img src="https://gravatar.com/avatar/a1db6a4341b144e96af65df28d27396e?s=200&d=robohash&r=x" alt="">
-          <input type="text" name="" value="" placeholder="Whats happenig?">
-        </div>
-        <button type="button" class="tweetBox-tweetButton" name="button">Tweet</button>
-      </form>
-    </div>
-    <!-- tweetbox ends -->
-    <!-- post starts -->
-    <div class="post">
-      <div class="post-avatar">
-        <img src="https://gravatar.com/avatar/a1db6a4341b144e96af65df28d27396e?s=200&d=robohash&r=x" alt="">
-      </div>
-      <div class="post-body">
-        <div class="post-header">
-          <div class="post-header-text">
-            <h3>Babak
-              <span class="post-header-special">
-                <span class="material-icons post-badge">verified</span> @babak
-              </span>
-            </h3>
-          </div>
-          <div class="post-header-description">
-            <p>bla bla is one test for test</p>
-          </div>
-        </div>
-        <img src="https://picsum.photos/600/400" alt="There should be a photo here!">
-        <div class="post-footer">
-          <!-- ICONS for the post -->
-          <span class="material-icons">repeat</span>
-          <span class="material-icons">favorite_border</span>
-          <span class="material-icons">publish</span>
-        </div>
-      </div>
-    </div>
-    <div class="post post-2">
-      <div class="post-avatar">
-        <img src="https://gravatar.com/avatar/a1db6a4341b144e96af65df28d27396e?s=200&d=robohash&r=x" alt="">
-      </div>
-      <div class="post-body">
-        <div class="post-header">
-          <div class="post-header-text">
-            <h3>Babak
-              <span class="post-header-special">
-                <span class="material-icons post-badge">verified</span> @babak
-              </span>
-            </h3>
-          </div>
-          <div class="post-header-description">
-            <p>bla bla is one test for test</p>
-          </div>
-        </div>
-        <img src="https://picsum.photos/800/600" alt="There should be a photo here!">
-        <div class="post-footer">
-          <!-- ICONS for the post -->
-          <span class="material-icons">repeat</span>
-          <span class="material-icons">favorite_border</span>
-          <span class="material-icons">publish</span>
-        </div>
-      </div>
-    </div>
-    <div class="post post-3">
-      <div class="post-avatar">
-        <img src="https://gravatar.com/avatar/a1db6a4341b144e96af65df28d27396e?s=200&d=robohash&r=x" alt="">
-      </div>
-      <div class="post-body">
-        <div class="post-header">
-          <div class="post-header-text">
-            <h3>Babak
-              <span class="post-header-special">
-                <span class="material-icons post-badge">verified</span> @babak
-              </span>
-            </h3>
-          </div>
-          <div class="post-header-description">
-            <p>bla bla is one test for test</p>
-          </div>
-        </div>
-        <img src="https://picsum.photos/850/650" alt="There should be a photo here!">
-        <div class="post-footer">
-          <!-- ICONS for the post -->
-          <span class="material-icons">repeat</span>
-          <span class="material-icons">favorite_border</span>
-          <span class="material-icons">publish</span>
-        </div>
-      </div>
-    </div>
-    <!-- post end -->
-  </div>
-  <!-- Feed ends -->
+      <!-- post starts -->
+      <div class="post-container">
 
-  <!-- widgets starts -->
-  <div class="widgets">
-    <div class="widgets-input">
-      <span class="material-icons widgets-serach-icon"> search </span>
-      <input type="text" name="" value="" placeholder="Search Twitter">
+        <div class="post">
+          <!-- Post-User-Info -->
+          <div class="user-container">
+            <h4>Story Teller:</h4>
+            <div class="post-avatar">
+              <img src="https://gravatar.com/avatar/a1db6a4341b144e96af65df28d27396e?s=200&d=robohash&r=x" alt="">
+            </div>
+            <div class="user-info">
+              <h3>Babak
+                <span class="post-header-special">
+                  <span class="material-icons post-badge">verified</span> @babak
+                </span>
+              </h3>
+            </div>
+          </div>
+          <!-- Post-Actual-Content -->
+          <div class="post-content">
+            <!-- Brief-version -->
+            <div class="post-header">
+              <div class="post-title">
+                <h2>Just some title</h2>
+              </div>
+              <div class="post-header-img">
+                <img src="https://picsum.photos/400/200" alt="There should be a photo here!">
+              </div>
+            </div>
+            <div class="post-story">
+              <p class="brief">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eget aliquam dui, lacinia vehicula lacus. Fusce eu placerat dolor. Maecenas sollicitudin lacus eget nisi mollis, sed vehicula mauris pulvinar. Duis
+                maximus,
+                nisl finibus sollicitudin consequat, tortor nulla tempor sem, id maximus purus lectus nec est. Nam sodales mollis dui. Quisque molestie nisl vel luctus fringilla. Sed a metus aliquet elit mollis dapibus at ac lectus. Phasellus pretium
+                dolor
+                at elit imperdiet aliquam. Nam a luctus dui.
+              </p>
+              <p class="entire invisible">
+
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eget aliquam dui, lacinia vehicula lacus. Fusce eu placerat dolor. Maecenas sollicitudin lacus eget nisi mollis, sed vehicula mauris pulvinar. Duis maximus, nisl finibus
+                sollicitudin consequat, tortor nulla tempor sem, id maximus purus lectus nec est. Nam sodales mollis dui. Quisque molestie nisl vel luctus fringilla. Sed a metus aliquet elit mollis dapibus at ac lectus. Phasellus pretium dolor at
+                elit imperdiet aliquam. Nam a luctus dui.
+                <br>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eget aliquam dui, lacinia vehicula lacus. Fusce eu placerat dolor. Maecenas sollicitudin lacus eget nisi mollis, sed vehicula mauris pulvinar. Duis maximus, nisl finibus
+                sollicitudin consequat, tortor nulla tempor sem, id maximus purus lectus nec est. Nam sodales mollis dui. Quisque molestie nisl vel luctus fringilla. Sed a metus aliquet elit mollis dapibus at ac lectus. Phasellus pretium dolor at
+                elit imperdiet aliquam. Nam a luctus dui.
+                <br>
+                Pellentesque a nibh sed risus ultrices eleifend vitae gravida justo. Curabitur tellus justo, tempor tristique cursus id, mollis non lectus. In hac habitasse platea dictumst. Sed lobortis imperdiet finibus. Phasellus id leo et lacus
+                imperdiet luctus. Maecenas volutpat mi vitae volutpat vulputate. Nunc lacinia sem tortor, non tristique nibh lobortis vitae. Praesent malesuada tristique tincidunt. Curabitur auctor porttitor nulla nec finibus. Proin vestibulum
+                eleifend sagittis. Morbi ut nibh id magna faucibus finibus sed eget lectus. Phasellus in odio urna. Nulla hendrerit nibh tortor, ut vulputate ligula volutpat in. Nunc vitae sollicitudin nibh. Orci varius natoque penatibus et magnis
+                dis parturient montes, nascetur ridiculus mus. Cras et magna in nisl pretium scelerisque ut at leo.
+              </p>
+              <a href="#" onclick="showStory(this);event.preventDefault();">Entire Chapter</a>
+
+            </div>
+          </div>
+          <!-- Post-Footer -->
+          <div class="post-footer">
+            <span class="material-icons">repeat</span>
+            <span class="material-icons">favorite_border</span>
+            <span class="material-icons">publish</span>
+          </div>
+        </div>
+        <div class="post">
+          <!-- Post-User-Info -->
+          <div class="user-container">
+            <h4>Story Teller:</h4>
+            <div class="post-avatar">
+              <img src="https://gravatar.com/avatar/a1db6a4341b144e96af65df28d27396e?s=200&d=robohash&r=x" alt="">
+            </div>
+            <div class="user-info">
+              <h3>Babak
+                <span class="post-header-special">
+                  <span class="material-icons post-badge">verified</span> @babak
+                </span>
+              </h3>
+            </div>
+          </div>
+          <!-- Post-Actual-Content -->
+          <div class="post-content">
+            <!-- Brief-version -->
+            <div class="post-header">
+              <div class="post-title">
+                <h2>Just some title</h2>
+              </div>
+              <div class="post-header-img">
+                <img src="https://picsum.photos/400/200" alt="There should be a photo here!">
+              </div>
+            </div>
+            <div class="post-story">
+              <p class="brief">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eget aliquam dui, lacinia vehicula lacus. Fusce eu placerat dolor. Maecenas sollicitudin lacus eget nisi mollis, sed vehicula mauris pulvinar. Duis
+                maximus,
+                nisl finibus sollicitudin consequat, tortor nulla tempor sem, id maximus purus lectus nec est. Nam sodales mollis dui. Quisque molestie nisl vel luctus fringilla. Sed a metus aliquet elit mollis dapibus at ac lectus. Phasellus pretium
+                dolor
+                at elit imperdiet aliquam. Nam a luctus dui.
+              </p>
+              <p class="entire invisible">
+
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eget aliquam dui, lacinia vehicula lacus. Fusce eu placerat dolor. Maecenas sollicitudin lacus eget nisi mollis, sed vehicula mauris pulvinar. Duis maximus, nisl finibus
+                sollicitudin consequat, tortor nulla tempor sem, id maximus purus lectus nec est. Nam sodales mollis dui. Quisque molestie nisl vel luctus fringilla. Sed a metus aliquet elit mollis dapibus at ac lectus. Phasellus pretium dolor at
+                elit imperdiet aliquam. Nam a luctus dui.
+                <br>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eget aliquam dui, lacinia vehicula lacus. Fusce eu placerat dolor. Maecenas sollicitudin lacus eget nisi mollis, sed vehicula mauris pulvinar. Duis maximus, nisl finibus
+                sollicitudin consequat, tortor nulla tempor sem, id maximus purus lectus nec est. Nam sodales mollis dui. Quisque molestie nisl vel luctus fringilla. Sed a metus aliquet elit mollis dapibus at ac lectus. Phasellus pretium dolor at
+                elit imperdiet aliquam. Nam a luctus dui.
+                <br>
+                Pellentesque a nibh sed risus ultrices eleifend vitae gravida justo. Curabitur tellus justo, tempor tristique cursus id, mollis non lectus. In hac habitasse platea dictumst. Sed lobortis imperdiet finibus. Phasellus id leo et lacus
+                imperdiet luctus. Maecenas volutpat mi vitae volutpat vulputate. Nunc lacinia sem tortor, non tristique nibh lobortis vitae. Praesent malesuada tristique tincidunt. Curabitur auctor porttitor nulla nec finibus. Proin vestibulum
+                eleifend sagittis. Morbi ut nibh id magna faucibus finibus sed eget lectus. Phasellus in odio urna. Nulla hendrerit nibh tortor, ut vulputate ligula volutpat in. Nunc vitae sollicitudin nibh. Orci varius natoque penatibus et magnis
+                dis parturient montes, nascetur ridiculus mus. Cras et magna in nisl pretium scelerisque ut at leo.
+              </p>
+              <a href="#" onclick="showStory(this);event.preventDefault();">Entire Chapter</a>
+
+            </div>
+          </div>
+          <!-- Post-Footer -->
+          <div class="post-footer">
+            <span class="material-icons">repeat</span>
+            <span class="material-icons">favorite_border</span>
+            <span class="material-icons">publish</span>
+          </div>
+        </div>
+        <div class="post">
+          <!-- Post-User-Info -->
+          <div class="user-container">
+            <h4>Story Teller:</h4>
+            <div class="post-avatar">
+              <img src="https://gravatar.com/avatar/a1db6a4341b144e96af65df28d27396e?s=200&d=robohash&r=x" alt="">
+            </div>
+            <div class="user-info">
+              <h3>Babak
+                <span class="post-header-special">
+                  <span class="material-icons post-badge">verified</span> @babak
+                </span>
+              </h3>
+            </div>
+          </div>
+          <!-- Post-Actual-Content -->
+          <div class="post-content">
+            <!-- Brief-version -->
+            <div class="post-header">
+              <div class="post-title">
+                <h2>Just some title</h2>
+              </div>
+              <div class="post-header-img">
+                <img src="https://picsum.photos/400/200" alt="There should be a photo here!">
+              </div>
+            </div>
+            <div class="post-story">
+              <p class="brief">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eget aliquam dui, lacinia vehicula lacus. Fusce eu placerat dolor. Maecenas sollicitudin lacus eget nisi mollis, sed vehicula mauris pulvinar. Duis
+                maximus,
+                nisl finibus sollicitudin consequat, tortor nulla tempor sem, id maximus purus lectus nec est. Nam sodales mollis dui. Quisque molestie nisl vel luctus fringilla. Sed a metus aliquet elit mollis dapibus at ac lectus. Phasellus pretium
+                dolor
+                at elit imperdiet aliquam. Nam a luctus dui.
+              </p>
+              <p class="entire invisible">
+
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eget aliquam dui, lacinia vehicula lacus. Fusce eu placerat dolor. Maecenas sollicitudin lacus eget nisi mollis, sed vehicula mauris pulvinar. Duis maximus, nisl finibus
+                sollicitudin consequat, tortor nulla tempor sem, id maximus purus lectus nec est. Nam sodales mollis dui. Quisque molestie nisl vel luctus fringilla. Sed a metus aliquet elit mollis dapibus at ac lectus. Phasellus pretium dolor at
+                elit imperdiet aliquam. Nam a luctus dui.
+                <br>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eget aliquam dui, lacinia vehicula lacus. Fusce eu placerat dolor. Maecenas sollicitudin lacus eget nisi mollis, sed vehicula mauris pulvinar. Duis maximus, nisl finibus
+                sollicitudin consequat, tortor nulla tempor sem, id maximus purus lectus nec est. Nam sodales mollis dui. Quisque molestie nisl vel luctus fringilla. Sed a metus aliquet elit mollis dapibus at ac lectus. Phasellus pretium dolor at
+                elit imperdiet aliquam. Nam a luctus dui.
+                <br>
+                Pellentesque a nibh sed risus ultrices eleifend vitae gravida justo. Curabitur tellus justo, tempor tristique cursus id, mollis non lectus. In hac habitasse platea dictumst. Sed lobortis imperdiet finibus. Phasellus id leo et lacus
+                imperdiet luctus. Maecenas volutpat mi vitae volutpat vulputate. Nunc lacinia sem tortor, non tristique nibh lobortis vitae. Praesent malesuada tristique tincidunt. Curabitur auctor porttitor nulla nec finibus. Proin vestibulum
+                eleifend sagittis. Morbi ut nibh id magna faucibus finibus sed eget lectus. Phasellus in odio urna. Nulla hendrerit nibh tortor, ut vulputate ligula volutpat in. Nunc vitae sollicitudin nibh. Orci varius natoque penatibus et magnis
+                dis parturient montes, nascetur ridiculus mus. Cras et magna in nisl pretium scelerisque ut at leo.
+              </p>
+              <a href="#" onclick="showStory(this);event.preventDefault();">Entire Chapter</a>
+
+            </div>
+          </div>
+          <!-- Post-Footer -->
+          <div class="post-footer">
+            <span class="material-icons">repeat</span>
+            <span class="material-icons">favorite_border</span>
+            <span class="material-icons">publish</span>
+          </div>
+        </div>
+      </div>
+      <!-- post end -->
     </div>
-    <div class="widgets-widget-container">
-      <h2>What's happening</h2>
-      <!-- <blockquote class="twitter-tweet">
+    <!-- Feed ends -->
+
+    <!-- widgets starts -->
+    <div class="widgets">
+      <div class="widgets-input">
+        <span class="material-icons widgets-serach-icon"> search </span>
+        <input type="text" name="" value="" placeholder="Search Twitter">
+      </div>
+      <div class="widgets-widget-container">
+        <h2>What's happening</h2>
+        <!-- <blockquote class="twitter-tweet">
         <p lang="en" dir="ltr">Sunsets don&#39;t get much better than this one over <a href="https://twitter.com/GrandTetonNPS?ref_src=twsrc%5Etfw">@GrandTetonNPS</a>. <a
-            href="https://twitter.com/hashtag/nature?src=hash&amp;ref_src=twsrc%5Etfw">#nature</a> <a href="https://twitter.com/hashtag/sunset?src=hash&amp;ref_src=twsrc%5Etfw">#sunset</a> <a
-            href="http://t.co/YuKy2rcjyU">pic.twitter.com/YuKy2rcjyU</a></p>&mdash; US Department of the Interior (@Interior) <a href="https://twitter.com/Interior/status/463440424141459456?ref_src=twsrc%5Etfw">May 5, 2014</a>
+        href="https://twitter.com/hashtag/nature?src=hash&amp;ref_src=twsrc%5Etfw">#nature</a> <a href="https://twitter.com/hashtag/sunset?src=hash&amp;ref_src=twsrc%5Etfw">#sunset</a> <a
+        href="http://t.co/YuKy2rcjyU">pic.twitter.com/YuKy2rcjyU</a></p>&mdash; US Department of the Interior (@Interior) <a href="https://twitter.com/Interior/status/463440424141459456?ref_src=twsrc%5Etfw">May 5, 2014</a>
       </blockquote> -->
       <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
     </div>
   </div>
   <!-- widgets ends -->
+  </div>
 
-  <script src="../scripts/hamburger.js" charset="utf-8"></script>
+    <script src="../scripts/post.js" charset="utf-8"></script>
 </body>
 
 </html>

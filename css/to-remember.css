@@ -1,87 +1,47 @@
-
-.container{
-display: flex;
-justify-content: space-between;
-width: 100%;
-height: 100%;
-
-}
-
-
-.to-remember-container{
-  background-color: #d9905830;
-
+.to-remember{
   width: 100%;
   height: 100%;
-  border: 1px solid black;
-  /* children positioning */
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-around;
+
 }
 
-
 /* -------------------- Title ------------------------ */
-.title{
-
+.title {
   width: 60%;
 }
 
-.title input{
-  height: 42px;
-  width: 100%;
-  text-align: center;
-  /* - Colouring - */
-  /*Medium Persian Blue*/
-  background-color: #0067A590;
-  color: #E8E0D6;
-  /* - UI - */
-  /*font*/
-  font-size: 18px;
-  font-weight: 800;
-  /*font-family: ---- ; */
-  /*sizing*/
-  border: none;
-  border-radius: 10px;
-  padding: 1ch;
-}
-
-.title input:focus{
-  outline: none;
-  outline-color: #E8E0D6;
-  background-color: #0067A5b0;
-}
-
-
 /* ----------------------Remember Box -------------------- */
-.remember-box{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-
-    width: 60%;
-    min-height: 300px;
-    max-height: 400px;
-    border-radius: 10px;
-    background-color: #d9905840;
-    overflow: auto;
-
+.remember-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 60%;
+  min-height: 300px;
+  max-height: 400px;
+  border-radius: 10px;
+  background-color: #d9905840;
+  overflow: auto;
 }
-.item.first-item{
+
+.checkbox-item.first-item {
   margin-top: 2%;
 }
 
-.item{
+.checkbox-item {
   margin-left: 2%;
 }
 
-.item h3{
+.checkbox-item h3 {
   display: inline-block;
 }
+
 /*--------- Checkbox ---------- */
-.item input {
+
+.checkbox-item input {
   padding: 0;
   height: initial;
   width: initial;
@@ -90,15 +50,15 @@ height: 100%;
   cursor: pointer;
 }
 
-.item label {
+.checkbox-item label {
   position: relative;
   cursor: pointer;
   font-weight: 800;
   font-size: 16px;
 }
 
-.item label:before {
-  content:'';
+.checkbox-item label:before {
+  content: '';
   -webkit-appearance: none;
   background-color: transparent;
   border: 2px solid #0067A5;
@@ -111,8 +71,7 @@ height: 100%;
   margin-right: 5px;
 }
 
-.item input:checked + label:after {
-
+.checkbox-item input:checked+label:after {
   content: '⨉';
   color: var(--Persian-blue-proper);
   font-size: 35px;
@@ -120,88 +79,57 @@ height: 100%;
   position: absolute;
   top: -10px;
   left: -2px;
-
-
-
 }
-/*--------- Checkbox Finished ---------- */
-/* Description */
-.item p{
 
+.checkbox-item p {
   text-indent: 2ch;
   margin: 1ch 2ch 2ch 2ch;
-
   font-weight: 500;
   font-size: 16px;
 }
 
-/* ----------------------- Add Box ----------------------- */
-
-.add-box{
+/* -------------------- Add Box ------------------- */
+.add-box {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 90%;
 }
 
-.form{
+.form {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.form-container{
+.form-container {
   width: 60%;
 }
-.form-container input{
-  height: 35px;
-  width: 100%;
 
-
-  /* - Colouring - */
-  /*Medium Persian Blue*/
-  background-color: #0067A590;
-  color: #E8E0D6;
-  /* - UI - */
-  /*font*/
-  font-size: 18px;
-  font-weight: 800;
-  /*font-family: ---- ; */
-  /*sizing*/
-  border: none;
-  border-radius: 10px;
-  padding: calc(1ch + 2px);
-}
-
-.form-container input:focus{
-  outline: none;
-  outline-color: #E8E0D6;
-  background-color: #0067A5b0;
-}
-
-.form-input{
+.form-input {
   margin-right: 5%;
 }
 
-.form-input > input{
+.form-input>input {
   margin-bottom: 3%;
+  padding: 1% 2%;
+  width: auto;
 }
 
-.form-submit > button{
+.form-submit>button {
   width: 45px;
   height: 45px;
-
   border-radius: 50%;
   font-size: 30px;
 }
 
-#subtitle{
+#subtitle {
   font-size: 17px;
   font-weight: 700;
   max-width: 100%;
 }
 
-#description{
+#description {
   font-size: 16px;
   font-weight: 600;
   max-width: 100%;
@@ -209,35 +137,7 @@ height: 100%;
 
 
 
-/* ------------ Buttons-------------- */
-
 /* Buttons */
 .button-container{
   display: flex;
-  margin-bottom: 2%;
-}
-
-.defined-button {
-  /* - Colouring - */
-  /*Medium Persian Blue*/
-  background-color: #0067A5;
-  /*Persian White*/
-  color: #E8E0D6;
-  /* - UI - */
-  /*  font  */
-  font-size: 12px;
-  font-weight: 800;
-  /*font-family: ---- ; */
-  /*sizing*/
-  border: none;
-
-  height: 42px;
-  width: calc(2*22px + 6ch);
-  border-radius: 10px;
-  margin-right: 5%;
-}
-
-.defined-button:hover {
-  /*Persina Blue Proper*/
-  background-color: #1c39BB;
 }

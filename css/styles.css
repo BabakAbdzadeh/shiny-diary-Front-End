@@ -10,19 +10,21 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
+
+  /* Colour variablse */
+    --persian-white: #E8E0D6;
+    --persian-orange: #D99058;
+    --persian-blue-medium: #0067A5;
+    --Persian-blue-proper: #1c39BB;
+    --persian-white-rgb: 232, 224, 214;
+    --persian-orange-rgb: 217, 144, 88;
+    --persian-blue-medium-rgb: 0, 103, 165;
+    --Persian-blue-proper-rgb: 28, 57, 187;
 }
 
 body {
   overflow-x: hidden;
-  font-family: Prompt;
-  --persian-white: #E8E0D6;
-  --persian-orange: #D99058;
-  --persian-blue-medium: #0067A5;
-  --Persian-blue-proper: #1c39BB;
-  --persian-white-rgb: 232, 224, 214;
-  --persian-orange-rgb: 217, 144, 88;
-  --persian-blue-medium-rgb: 0, 103, 165;
-  --Persian-blue-proper-rgb: 28, 57, 187;
   /* Makes nav-bar width to be enough we need */
   height: 100vh;
   /* Because of Sticky navbar*/
@@ -37,13 +39,33 @@ body {
   background-color: rgba(var(--persian-white-rgb), 0.38);
 }
 
+
+
+/* FONT */
+
+.font-family{
+      font-family: 'Cinzel', serif;
+      font-size: 18px;
+      font weight: 400;
+}
+
+h1{
+  font-size: 48px;
+}
+h2{
+  font-size: 28px;
+}
+h3{
+  font-size: 24px;
+}
 /* ---------------- Basic structure ---------- */
 
-.container{
+.layer-container{
   display: flex;
   align-items: flex-start;
   justify-content: center;
   width: 100%;
+  max-width: 100%;
   height: auto;
 }
 
@@ -57,13 +79,6 @@ body {
   width:100%;
   height: 100vh;
   z-index: 100;
-}
-.posts {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-
-  /* border-bottom: 1px solid black; */
 }
 
 /* ----------- sidebar ---------------------- */
