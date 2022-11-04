@@ -83,6 +83,10 @@ width:0;min-width:100%;
   width:0;min-width:100%;
 }
 
+.post-story a{
+  display: inline-block;
+  margin-top: 2%;
+}
 
 
 .post-footer{

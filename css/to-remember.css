@@ -11,6 +11,9 @@
 /* -------------------- Title ------------------------ */
 .title {
   width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* ----------------------Remember Box -------------------- */
@@ -108,12 +111,17 @@
 
 .form-input {
   margin-right: 5%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .form-input>input {
-  margin-bottom: 3%;
-  padding: 1% 2%;
-  width: auto;
+  font-size: 15px;
+  margin-bottom: 2%;
+  padding: 2% 2ch;
+  width: 40%;
+  height: 100%;
 }
 
 .form-submit>button {
@@ -135,7 +143,11 @@
   max-width: 100%;
 }
 
-
+.form-submit{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 /* Buttons */
 .button-container{
